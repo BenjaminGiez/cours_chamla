@@ -1,6 +1,6 @@
 # cours_chamla
 Cours sur la POO de Lior Chamla
-https://www.youtube.com/watch?v=fZcGXjg97Ns&list=PLpUhHhXoxrjcOTNSHdIo_hSwtXFku16mL&ab_channel=LiorCHAMLA
+<[Vidéo](https://www.youtube.com/watch?v=fZcGXjg97Ns&list=PLpUhHhXoxrjcOTNSHdIo_hSwtXFku16mL&ab_channel=LiorCHAMLA)>
 
 Retour sur la Programmation Orientée Objet, comment va t on s'en servir :
 
