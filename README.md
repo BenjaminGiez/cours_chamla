@@ -11,7 +11,7 @@ Retour sur la Programmation Orientée Objet, comment va t on s'en servir :
   - Boss de fin : abstraction et polymorphisme
 
 
-1- Les Classes [introduction.php]
+#1- Les Classes [introduction.php]#
 
 Dans cet exercice, on va créer une classe Employe puis créer ses instances ($employe1 et $employe2). On se rend compte que grâce aux classes, on ne renseigne que peu 
 d'informations comparé à la programmation PHP qu'on faisait jusqu'à maintenant. Ici, si on ne passe pas par les classes, le problème qui va apparaître sera le nombre
