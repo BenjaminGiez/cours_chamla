@@ -30,3 +30,6 @@ Pour acceder au variables ici, l'operateur sera une fléche (->).
 La Fonction "presentation" dans le code (public function presentation()) est en réalité une méthode : c'est une fonction qui fait partie d'un objet. En général, on 
 appelle une "function" fonction quand elle est à l'exterieur de la classe, tandis qu'une fonction qui nécésite qu'on passe par un objet s'appellera une méthode donc.
 
+Les "variables" au début du code (précedées par 'public' : $nom, $prenom et $age) sont plus précisement des prorietés (des variables qui font partie d'un objet).
+On va désigner un objet en particulier en utilisant 'this->$variable'. ($this->nom pour désigner le nom de 'cet employé').
+
