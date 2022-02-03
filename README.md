@@ -21,6 +21,12 @@ Les classes permettent de structurer le code sous la forme d'entités cohétrent
 
 On va creer des objets donc. La classe est un représentation de ce qu'est un employé (il faut y voir un élan, vous allez pas nous payer en oignons ?!! #ref) : Un employé
 c'est un $prenom, un $nom et un $age. L'objet est l'employé : Joseph Darymacie 35 ans.
+
 new Employe() = Nouvelle instance de la classe Employe.
 
+$employe1 contient une nouvelle instance de la classe Employe ($nom, $prenom, $age).
+Pour acceder au variables ici, l'operateur sera une fléche (->).
+
+La Fonction "presentation" dans le code (public function presentation()) est en réalité une méthode : c'est une fonction qui fait partie d'un objet. En général, on 
+appelle une "function" fonction quand elle est à l'exterieur de la classe, tandis qu'une fonction qui nécésite qu'on passe par un objet s'appellera une méthode donc.
 
