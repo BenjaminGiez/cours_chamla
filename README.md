@@ -17,3 +17,10 @@ Dans cet exercice, on va créer une classe Employe puis créer ses instances ($e
 d'informations comparé à la programmation PHP qu'on faisait jusqu'à maintenant. Ici, si on ne passe pas par les classes, le problème qui va apparaître sera le nombre
 important de variables nécessaires à la création d'une bdd pour les employés d'une entreprise. Sans les classes, on devra également passer à la fonction les infos de 
 l'employé à présenter.
+Les classes permettent de structurer le code sous la forme d'entités cohétrentes.
+
+On va creer des objets donc. La classe est un représentation de ce qu'est un employé (il faut y voir un élan, vous allez pas nous payer en oignons ?!! #ref) : Un employé
+c'est un $prenom, un $nom et un $age. L'objet est l'employé : Joseph Darymacie 35 ans.
+new Employe() = Nouvelle instance de la classe Employe.
+
+
