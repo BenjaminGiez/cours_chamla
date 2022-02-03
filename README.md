@@ -11,5 +11,5 @@ Retour sur la Programmation Orientée Objet, comment va t on s'en servir :
   - Boss de fin : abstraction et polymorphisme
 
 
-1- Les Classes
+1- Les Classes [introduction.php]
 
