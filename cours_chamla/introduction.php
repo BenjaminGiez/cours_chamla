@@ -3,7 +3,29 @@
 class Employe{
     public $nom;
     public $prenom;
-    public $age;
+    private $age; //On fait passer l'age en privé pour eviter les erreurs de calculs potenciel
+
+//=============================================================//
+//                          "SETTER"                           // 
+//=============================================================//
+
+    public function setAge($age)
+    {
+        $this->age = $age;
+    }
+
+//=============================================================//
+//                          "GETTER"                           // 
+//=============================================================//
+
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+//=============================================================//
+//                          "CONSTRUCTEUR"                     // 
+//=============================================================//
 
     public function __construct($prenom, $nom, $age)
     {
@@ -36,5 +58,7 @@ $employe2->age = 48;*/
 //Même chose que pour $employe1 *
 //=============================================================
 
+// Utilisation du setter ▼
+$employe1->setAge(50); //Grâce au setter, on peu "set" l'age de employe1 qui est une proprieté "private";
 
 $employe1->presentation();
