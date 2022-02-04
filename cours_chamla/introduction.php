@@ -11,7 +11,12 @@ class Employe{
 
     public function setAge($age)
     {
-        $this->age = $age;
+        if (is_int($age) && $age >= 1 && $age <= 120) // Ici on précise que le valeur doit être comprise
+        $this->age = $age;                            // entre 1 et 120;
+    } else {
+        //On va préciser sur un message d'où vient l'erreur si on met une chaîne de charactère à la place 
+        //d'un entier (par exemple);
+        throw new Exception ("L'âge d'un employé devrait être un entier compris entre 1 et 120 !");
     }
 
 //=============================================================//
