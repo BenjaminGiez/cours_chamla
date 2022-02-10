@@ -45,3 +45,7 @@ L'encapsulation sert à securiser le code, grâce à ça il sera bien plus facil
 
 #3- L'héritage [introduction.php]#
 
+Ici la classe "Patron" hérite de la classe "Employe", c'est à dire qu'il va avoir les trois proprités de cette dernière. Pas besoin de répeter ces propriétés donc. La classe "Patron" aura la possibilité d'avoir plus de propriétés mais toujours avec $nom, $prenom et $age.
+Grâce à la syntaxe "parent::", on n'a besoin que d'une ligne à la place des trois nécessaires pour $nom, $prenom et $age.
+
+Pour 
