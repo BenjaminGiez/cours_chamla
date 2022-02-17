@@ -3,22 +3,38 @@
 class Employe{
     public $nom;
     public $prenom;
-    private $age; //On fait passer l'age en privé pour eviter les erreurs de calculs potenciel
+    protected $age; //On peut faire passer l'age en privé pour eviter les erreurs de calculs potenciel
 
+//=============================================================//
+//                          "CONSTRUCTEUR"                     // 
+//=============================================================//
+
+public function __construct($prenom, $nom, $age)
+{
+    $this->prenom = $prenom;
+    $this->nom = $nom;
+    $this->setAge($age);
+    var_dump("Je suis construit");
+}
+
+public function presentation()
+{
+    var_dump("Yo, je suis $this->prenom $this->nom et j'ai $this->age ans");
+}
 //=============================================================//
 //                          "SETTER"                           // 
 //=============================================================//
 
     public function setAge($age)
     {
-        if (is_int($age) && $age >= 1 && $age <= 120) // Ici on précise que le valeur doit être comprise
+        if (is_int($age) && $age >= 1 && $age <= 120){ // Ici on précise que le valeur doit être comprise
         $this->age = $age;                            // entre 1 et 120;
     } else {
         //On va préciser sur un message d'où vient l'erreur si on met une chaîne de charactère à la place 
         //d'un entier (par exemple);
         throw new Exception ("L'âge d'un employé devrait être un entier compris entre 1 et 120 !");
     }
-
+    }
 //=============================================================//
 //                          "GETTER"                           // 
 //=============================================================//
@@ -28,23 +44,23 @@ class Employe{
         return $this->age;
     }
 
-//=============================================================//
-//                          "CONSTRUCTEUR"                     // 
-//=============================================================//
 
-    public function __construct($prenom, $nom, $age)
+}
+
+class Patron extends Employe{
+    public $voiture;
+
+    public function __construct($prenom, $nom, $age, $voiture)
     {
-        $this->prenom = $prenom;
-        $this->nom = $nom;
-        $this->age = $age;
-        var_dump("Je suis construit");
+        parent::__construct($prenom, $nom, $age);//on a besoin que d'une ligne ici grâce à "parent::"
+        $this->voiture = $voiture;
     }
-
-    public function presentation()
+    public function rouler()
     {
-        var_dump("Bonjour, je suis $this->prenom $this->nom et j'ai $this->age ans");
+        var_dump("Bonjour, je roule avec ma $this->voiture !");
     }
 }
+
 
 $employe1 = new Employe('Joseph', 'Darymacie', 35);
 //=============================================================
@@ -67,3 +83,8 @@ $employe2->age = 48;*/
 $employe1->setAge(50); //Grâce au setter, on peu "set" l'age de employe1 qui est une proprieté "private";
 
 $employe1->presentation();
+
+$patron = new Patron("Coco", "Lasticot", 84, "Merco");
+$patron->presentation();
+$patron->rouler();
+
