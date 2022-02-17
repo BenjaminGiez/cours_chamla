@@ -10,8 +10,8 @@ class Employe implements Travailleur
     public $prenom;
     protected $age; //On peut faire passer l'age en privé pour eviter les erreurs de calculs potenciel
 
-//=============================================================//
-//                          "CONSTRUCTEUR"                     // 
+///=============================================================//
+//                                                                "CONSTRUCTEUR"                                                             // 
 //=============================================================//
 
 public function __construct($prenom, $nom, $age)
@@ -31,7 +31,7 @@ public function travailler(){
 return "Je suis un employé et je travail vite fait";
 }
 //=============================================================//
-//                          "SETTER"                           // 
+//                                                               "SETTER"                                                                              // 
 //=============================================================//
 
     public function setAge($age)
@@ -44,8 +44,8 @@ return "Je suis un employé et je travail vite fait";
         throw new Exception ("L'âge d'un employé devrait être un entier compris entre 1 et 120 !");
     }
     }
-//=============================================================//
-//                          "GETTER"                           // 
+///=============================================================//
+//                                                                                "GETTER"                                                            // 
 //=============================================================//
 
     public function getAge()

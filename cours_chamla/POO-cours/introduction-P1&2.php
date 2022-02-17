@@ -6,7 +6,7 @@ class Employe{
     protected $age; //On peut faire passer l'age en privé pour eviter les erreurs de calculs potenciel
 
 //=============================================================//
-//                          "CONSTRUCTEUR"                     // 
+//                                                                "CONSTRUCTEUR"                                                             // 
 //=============================================================//
 
 public function __construct($prenom, $nom, $age)
@@ -22,7 +22,7 @@ public function presentation()
     var_dump("Yo, je suis $this->prenom $this->nom et j'ai $this->age ans");
 }
 //=============================================================//
-//                          "SETTER"                           // 
+//                                                               "SETTER"                                                                              // 
 //=============================================================//
 
     public function setAge($age)
@@ -36,7 +36,7 @@ public function presentation()
     }
     }
 //=============================================================//
-//                          "GETTER"                           // 
+//                                                                                "GETTER"                                                            // 
 //=============================================================//
 
     public function getAge()
